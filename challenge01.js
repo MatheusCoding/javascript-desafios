@@ -8,7 +8,7 @@ myvar = 10;
 var soma = 15 + 8;
 
 // Atribua à variável `soma` todo o valor dela, somando 1, usando o operador de soma abreviado.
-soma ++;
+soma++;
 
 // Atribua à variável `soma` todo o valor dela, multiplicando por 3, usando o operador de multiplicação abreviado.
 soma *= 3;
@@ -32,7 +32,7 @@ console.log(soma === myvar);
 console.log(myvar <= soma);
 
 // Crie uma função chamada `divisao` que receba como parâmetro dois números, e retorne o resultado da divisão entre eles.
-function divisao (a, b){
+function divisao(a, b) {
     return a / b;
 }
 
