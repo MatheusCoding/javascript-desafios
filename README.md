@@ -6,3 +6,9 @@ Qualquer pessoa interessada em JavaScript pode participar! Não importa se você
 
 ### Contribuindo 🤝
 Se você tiver ideias para novos desafios de JavaScript ou quiser ajudar a melhorar os desafios existentes, envie um pull request com suas alterações. Sua contribuição é muito bem-vinda!
+
+
+<div style="display: inline_block"><br>  
+  <img align="center" alt="Js" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">  
+  <img align="right" alt="pic" height="250" style="border-radius:50px;" src="https://media2.giphy.com/media/KYW92tOFKQFVs6S0px/giphy.gif?width=676&height=676">
+</div>
