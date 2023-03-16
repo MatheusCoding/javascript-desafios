@@ -19,15 +19,17 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
 Onde VALOR é o novo valor da variável.
 */
 function addValor() {
-    novaVariavel = 'VALOR';
-    return novaVariavel;
+    novaVariavel = 25;
+    return 'O valor da variável agora é ' + novaVariavel;
 }
 
 // Invoque a função criada acima.
-addValor(); // chama a função para adicionar a string 'VALOR' na variavel novaVariavel.
+addValor();
 
 // Qual o retorno da função? (Use comentários de bloco).
-console.log(addValor()); // A função retorna a string 'VALOR' que será adicionada na variavel novaVariavel.
+console.log(addValor()); 
+/* Adiciona o valor 25 a nova variavel.
+*/
 
 /*
 Crie uma função com as seguintes características:
@@ -37,10 +39,10 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function multiplicacao(a, b, c) {
-    if (a, b , c){
-        return (a * b * c) + 2;       
+    if (a === undefined || b === undefined || c === undefined){
+        return 'Preencha todos os valores corretamente!';       
     } else {
-        return 'Preencha todos os valores corretamente!';        
+        return (a * b * c) + 2;         
     }    
 }
 
@@ -58,7 +60,7 @@ multiplicacao(2, 3, 4);
 
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-console.log(multiplicacao(2, 3, 4)); //Mostra o valor retornado passando todos os argumentos (a, b, c) e somando 2.
+console.log(multiplicacao(2, 3, 4)); //Mostra o valor 26 retornado passando todos os argumentos (a, b, c) e somando 2.
 
 /*
 Crie uma função com as seguintes características:
