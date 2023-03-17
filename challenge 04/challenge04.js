@@ -175,5 +175,5 @@ carro.adicionarPessoas(-4); // 'Já temos 1 pessoas no carro!'
 carro.adicionarPessoas(10); // 'Só cabem mais 4 pessoas no carro!'
 
 // Quantas pessoas temos no carro?
-carro.quantidadePessoas;
+carro.quantidadePessoas; // 1
 console.log(carro.quantidadePessoas)
