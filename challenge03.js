@@ -178,9 +178,9 @@ correta, de acordo com os dados inseridos no objeto.
 */
 pessoa.apresentacao = function() {
 
-    var pronome = 'o';
+    var artigo = 'o';
     if(pessoa.sexo === 'Feminino'){
-    pronome = 'a';
+    artigo = 'a';
     }
     var idade = pessoa.idade + ' anos,'
     if(pessoa.idade === 1){
@@ -191,7 +191,7 @@ pessoa.apresentacao = function() {
     caminhouu = pessoa.caminhouQuantosMetros + ' metro!';
     }
 
-    return 'Olá, eu sou ' + pronome + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + idade + ' ' + pessoa.altura + ' meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + caminhouu;
+    return 'Olá, eu sou ' + artigo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + idade + ' ' + pessoa.altura + ' meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + caminhouu;
     
 }
 
