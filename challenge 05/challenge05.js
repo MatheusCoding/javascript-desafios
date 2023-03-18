@@ -27,7 +27,6 @@ function pegarValor(arr, num) {
     return arg[num];    
 };
 
-
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
@@ -87,7 +86,6 @@ Ainda com a função acima, imprima a quantidade de páginas de um livro qualque
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-
 console.log('O livro ' + book().logica + ' tem ' + book().logica.quantidadePaginas + ' páginas!');
 
 /*
