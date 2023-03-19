@@ -33,13 +33,13 @@ console.log( 'O segundo elemento do segundo array é ', myArray[6][1]);
 Mostre no console quantos itens tem o primeiro array criado, com a frase:
 "O primeiro array tem [QUANTIDADE DE ITENS] itens."
 */
-console.log('O primeiro array tem '+ (myArray.length) + ' itens.');
+console.log('O primeiro array tem '+ myArray.length + ' itens.');
 
 /*
 Agora mostre no console quantos itens tem o segundo array criado, com a frase:
 "O segundo array tem [QUANTIDADE DE ITENS] itens."
 */
-console.log('O segundo array tem ' + (myArray[3].length) + ' itens.');
+console.log('O segundo array tem ' + myArray[3].length + ' itens.');
 
 /*
 Utilizando a estrutura de repetição `while`, mostre no console todos os números
@@ -63,7 +63,7 @@ var contador = 10;
 var impares = [];
 while(contador <= 20){
     
-    contador % 2 === 1 ? impares.push(contador) : '';
+    contador % 2 !== 0 ? impares.push(contador) : '';
     contador++;
 }
 console.log( 'Números ímpares entre 10 e 20: \n' + impares );
@@ -81,7 +81,7 @@ for(var contador = 100, pares = []; contador <= 120 ; contador++){
 console.log( 'Números pares entre 100 e 120: \n ' + pares );
 
 
-for(var contador = 110, impares = [] ; contador <= 125 ; contador++ ){
-    contador % 2 === 1 ? impares.push(contador) : '';
+for(var contador = 111, impares = [] ; contador <= 125 ; contador++ ){
+    contador % 2 !== 0 ? impares.push(contador) : '';
 }
 console.log( 'Números ímpares entre 111 e 125: \n' + impares );
