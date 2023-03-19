@@ -33,13 +33,13 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-function showTeamPosition(num) {
-    var posicao = num + 1;   
+function showTeamPosition(posicao) {
+      
 
-    if (num <= 4) {
-        return 'O time que está em ' + posicao + 'º lugar é o ' + teams[num] + '.';
-    } else {
+    if (posicao > 5 || posicao < 1 ) {
         return 'Não temos a informação do time que está na posição ' + posicao + '.';
+    } else {
+        return 'O time que está em ' + posicao + 'º lugar é o ' + teams[posicao - 1] + '.';
     }
 };
 
@@ -48,12 +48,13 @@ Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
 
-console.log(showTeamPosition(0));
 console.log(showTeamPosition(1));
 console.log(showTeamPosition(2));
 console.log(showTeamPosition(3));
 console.log(showTeamPosition(4));
 console.log(showTeamPosition(5));
+console.log(showTeamPosition(0));
+console.log(showTeamPosition(6));
 
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
@@ -83,32 +84,29 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
 function convertToHex(cor){
     var hexadecimal;
 
-    if(!cor) return console.log('Por favor insira uma cor válida');
+    if(!cor) return 'Por favor insira uma cor válida';
 
     switch(cor){
+        
         case 'Azul':
-            hexadecimal = '#0000ff';
-            console.log('O hexadecimal para a cor ' + cor + ' é ' + hexadecimal);
-            break;
+            hexadecimal = '#0000FF';
+            break;            
         case 'Vermelho':
             hexadecimal = '#FF0000';
-            console.log('O hexadecimal para a cor ' + cor + ' é ' + hexadecimal);
-            break;
+            break;            
         case 'Verde':
             hexadecimal = '#008000';
-            console.log('O hexadecimal para a cor ' + cor + ' é ' + hexadecimal);
-            break;
+            break;      
         case 'Amarelo':
-            hexadecimal = '#ffff00';
-            console.log('O hexadecimal para a cor ' + cor + ' é ' + hexadecimal);
-            break;
+            hexadecimal = '#FFFF00';
+            break;            
         case 'Roxo':
             hexadecimal = '#993399';
-            console.log('O hexadecimal para a cor ' + cor + ' é ' + hexadecimal);
-            break;        
+            break;                    
         default:
-            console.log('Não temos o equivalente hexadecimal para ' + cor + '.');
+            return 'Não temos o equivalente hexadecimal para ' + cor + '.';
     }
+    return 'O hexadecimal para a cor ' + cor + ' é ' + hexadecimal;
 };
 
 /*
