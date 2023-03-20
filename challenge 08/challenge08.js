@@ -20,7 +20,7 @@ console.log('A soma de', valor1, 'e', valor2, 'é igual a', sum(valor1, valor2))
 Mostre no console o nome da função criada acima, com a frase:
 "O nome da função que faz a soma é [NOME DA FUNÇÃO]."
 */
-console.log('O nome da função que faz a soma é', sum.name, '.');
+console.log('O nome da função que faz a soma é', sum.name + '.');
 
 /*
 Crie uma função literal chamada `showName`. Essa função deve retornar o
@@ -55,28 +55,29 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
   "Operação inválida."
 */
 function calculator(operator){    
-    function operation(x, y){        
+    return function operation(x, y){ 
+        var result;
         switch (operator){
             case '+':
-                return x + y;                
+                result = x + y;  
+                break;
             case '-':
-                return x - y;
+                result = x - y;
+                break;
             case '*':
-                return x * y;
+                result = x * y;
+                break;
             case '/':
-                return x / y;
+                result = x / y;
+                break;
             case '%':
-                return x % y;
+                result = x % y;
+                break;
             default:
                 return 'Operação inválida.';           
         }         
-    }
-
-    return function(x, y) {        
-        var result = operation(x, y);
-    
-    return 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + result;
-    }
+        return 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + result + '.';         
+    };          
 }
 
 /*
@@ -100,6 +101,7 @@ var multiplication = calculator('*');
 var division = calculator('/');
 var mod = calculator('%');
 
+
 /*
 Faça uma operação com cada uma das funções criadas acima, mostrando o resultado
 no console.
@@ -108,3 +110,5 @@ console.log(subtraction(4,1));
 console.log(multiplication(2,5));
 console.log(division(8,4));
 console.log(mod(9,2));
+
+
