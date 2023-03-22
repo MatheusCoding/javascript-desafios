@@ -49,7 +49,7 @@ Após a função, mostrar a mensagem no console:
 'The person has more than 25 years old? [TRUE/FALSE]'
 */
 function moreThan(age){
-    if(person['age'] < age){
+    if(person['age'] > age){
         return true;
     }
     return false;
@@ -78,7 +78,7 @@ criado acima, só precisa ser reiniciado) números de 0 a 20, inclusive
 esses. Se o número for ímpar, pular para o próximo número.
 Mostrar no console os números do array.
 */
-//
+
 numbers = [];
 
 for( var i = 0 ; i <= 20 ; i++ ){
