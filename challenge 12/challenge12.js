@@ -45,7 +45,7 @@ var listBooks = [];
 for (var prop in books) {
   listBooks.push(books[prop].name);
 }
-console.log( '\nLista de livros:',  );
+console.log( '\nLista de livros:', listBooks.join(', ') );
 
 /*
 Remova o último livro, e mostre-o no console.
