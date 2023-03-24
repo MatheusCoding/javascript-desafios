@@ -12,9 +12,9 @@ Preencha cada propriedade com os seus dados pessoais, respeitando o tipo
 de valor para cada propriedade.
 */
 var person = {
-    'name': 'Matheus',
-    'lastname': 'Dias',
-    'age': 27
+    name: 'Matheus',
+    lastname: 'Dias',
+    age: 27
 };
 console.log( 'Propriedades de "person":', person );
 
@@ -35,7 +35,7 @@ seguintes propriedades:
 `name`: String
 `pages`: Number
 */
-books.push({'name': 'Em Busca do Tempo Perdido', 'pages': 2472}, {'name': 'Ulysses', 'pages': 550}, {'name': 'Dom Quixote', 'pages': 126} );
+books.push({name: 'Em Busca do Tempo Perdido', pages: 2472}, {name: 'Ulysses', pages: 550}, {name: 'Dom Quixote', pages: 126} );
 console.log(books);
 
 /*
