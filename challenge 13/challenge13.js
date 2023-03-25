@@ -136,8 +136,8 @@ Senão, mostrar a frase:
 - "Ceará não foi incluído :("
 */
 console.log( '\nCeará está incluído em `brasil`?' );
-var check = brasil.filter(function(item){
-    return item === 'Ceará'
+var check = brasil.some(function(item){
+    return item === 'Ceará';
 }) ? 'Ceará está incluído!' : 'Ceará não foi incluído :('; 
 console.log(check);
 
@@ -149,8 +149,8 @@ Atribua o novo array a uma variável chamada `map`.
 */
 var map = newBrasil.map(function(item, index){
     return { 
-        index: index + 1,
-        item: `${item.estado} pertence ao Brasil`
+        id: item.id + 1,
+        estado: item.estado + ' pertence ao Brasil'
     };        
 })
 console.log(map);
@@ -166,7 +166,7 @@ Filtre o array criado acima, retornando somente os estados que tiverem
 ID par. Atribua o valor à uma variável chamada `filter`.
 */
 var filter = map.filter(function(item, index){
-    return item.index % 2 === 0;
+    return item.id % 2 === 0;
 });
 
 /*
