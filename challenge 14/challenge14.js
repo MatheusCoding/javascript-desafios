@@ -11,18 +11,10 @@ Os números devem ser de 1 a 10.
 Mostre esse array no console.
 */
 console.log( 'Number Objects Array:' );
-var numberObjects = [
-    { number: 1},
-    { number: 2},
-    { number: 3},
-    { number: 4},
-    { number: 5},
-    { number: 6},
-    { number: 7},
-    { number: 8},
-    { number: 9},
-    { number: 10}
-];
+var numberObjects = [];
+for(var i = 1; i <= 10; i++){
+    numberObjects.push({number : i});
+}
 console.log(numberObjects);
 
 /*
@@ -35,15 +27,6 @@ var justNumbers = numberObjects.map(function(item){
     return item.number;
 });
 console.log(justNumbers);
-
-// Outra forma de fazer essa parte.
-/*var justNumbers = [];
-numberObjects.forEach(function(item){
-    justNumbers.push(item.number);
-});
-console.log(justNumbers)
-*/
-
 
 /*
 Crie um novo array chamado `justMod2Or3`, que receberá do array criado acima
@@ -92,7 +75,7 @@ infantil, onde você coloca a letra "P" antes de cada sílaba de uma palavra
 falada, como se você estivesse falando em código xD
 */
 console.log( '\nSeu nome na língua do "P":' );
-var nome = ['M', 'a', 't', 'h', 'e', 'u', 's'];
+var nome = ['Ma', 'theus'];
 var finalName = nome.reduce(function(previousValue, currentValue){
     return previousValue + 'P' + currentValue;
 }, '');
